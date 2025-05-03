@@ -1,0 +1,25 @@
+{
+  "name": "tvup/redis-job-inspector",
+  "description": "Inspect Laravel Redis queue jobs like Eloquent",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "RedisJobInspector\\": "src/"
+    }
+  },
+  "require": {
+    "php": "^8.1",
+    "illuminate/support": "^10.0|^11.0"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "RedisJobInspector\\RedisJobInspectorServiceProvider"
+      ],
+      "aliases": {
+        "RedisQueue": "RedisJobInspector\\Facades\\RedisQueue"
+      }
+    }
+  }
+}

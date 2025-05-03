@@ -1,0 +1,28 @@
+# Composer
+/vendor
+/composer.lock
+
+# PHPStorm / VS Code / IDE-filer
+.idea/
+/.vscode/
+
+# OS-specifikt
+.DS_Store
+Thumbs.db
+
+# PHPUnit test cache (hvis du bruger det)
+.phpunit.result.cache
+
+# Coverage reports
+/coverage/
+
+# Logs
+*.log
+
+# Git keeps empty folders if you do this
+**/.gitkeep
+
+# Node stuff (kun hvis du en dag tilføjer npm til pakken)
+/node_modules
+/npm-debug.log
+/yarn-error.log
